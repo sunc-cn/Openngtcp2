@@ -31,6 +31,7 @@
 #include <stdbool.h>
 #include <netdb.h>
 #include <sys/socket.h>
+#include <signal.h>
 
 #include <openngtcp2.h>
 
