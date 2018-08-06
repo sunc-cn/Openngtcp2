@@ -1,8 +1,8 @@
 #!/bin/sh
 
 
-export OPENSSL_CFLAGS="-I/usr/local/opt/openssl@1.1/include"
-export OPENSSL_LIBS="-L/usr/local/opt/openssl@1.1/lib -lssl -lcrypto"
+export OPENSSL_CFLAGS="-I/tmp/openssl/include"
+export OPENSSL_LIBS="-L/tmp/openssl/lib -lssl -lcrypto"
 
 export NGTCP2_CFLAGS="-I/tmp/ngtcp2-master/include"
 export NGTCP2_LIBS="-L/tmp/ngtcp2-master/lib -lngtcp2"

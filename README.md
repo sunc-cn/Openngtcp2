@@ -6,9 +6,9 @@ Openngtcp2 is a wrapped library to ngtcp2, that provide a series OpenSSL style A
 
 Requirements
 ----------------
-* OpenSSL >= 1.1.1
+* OpenSSL >= 1.1.1, [quic-draft-13](https://github.com/tatsuhiro-t/openssl)
 * libevent
-* ngtcp2(draft-12)
+* ngtcp2(draft-13)
 
 Build
 ----------------

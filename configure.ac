@@ -23,7 +23,7 @@
 #
 
 AC_PREREQ(2.61)
-AC_INIT([openngtcp2], [0.12.0-dev], [jr89197@hotmail.com])
+AC_INIT([openngtcp2], [0.13.0-dev], [jr89197@hotmail.com])
 AC_CONFIG_AUX_DIR([.])
 AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_HEADERS([config.h])
