@@ -1,0 +1,13 @@
+# openngtcp2
+
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: libopenngtcp2
+Description: ngtcp2 wrapping library in OpenSSL style
+URL: https://github.com/QbsuranAlang
+Version: @VERSION@
+Libs: -L${libdir} -lopenngtcp2
+Cflags: -I${includedir}
