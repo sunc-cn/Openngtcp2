@@ -98,7 +98,6 @@ QUIC *QUIC_new_accept(QUIC_CTX *quic_ctx, QUIC_PREACCEPT *pre_data, char *errbuf
 
     ssl_opts = (SSL_OP_ALL & ~SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS) | SSL_OP_SINGLE_ECDH_USE | SSL_OP_CIPHER_SERVER_PREFERENCE;
     SSL_set_options(quic->ssl, ssl_opts);
-    SSL_set_mode(quic->ssl, SSL_MODE_RELEASE_BUFFERS);
     SSL_set_max_early_data(quic->ssl, UINT32_MAX);
 
     //copy from QUIC_CTX

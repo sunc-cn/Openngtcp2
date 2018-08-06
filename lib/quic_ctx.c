@@ -130,8 +130,9 @@ QUIC_CTX *QUIC_CTX_new(char *errbuf) {
     //alpn list for server to select
     QUIC_CTX_set_alpn_cb(quic_ctx, quic_alpn_select_proto_cb, quic_ctx);
 
-    //session
+    //other
     SSL_CTX_set_session_cache_mode(quic_ctx->ssl_ctx, SSL_SESS_CACHE_BOTH | SSL_SESS_CACHE_NO_INTERNAL_STORE);
+    SSL_CTX_set_mode(quic_ctx->ssl_ctx, SSL_MODE_RELEASE_BUFFERS | SSL_MODE_QUIC_HACK);
 
     return quic_ctx;
 }//end QUIC_CTX_new
